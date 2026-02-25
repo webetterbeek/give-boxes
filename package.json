@@ -1,0 +1,19 @@
+{
+  "name": "vite-vanilla-sass",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "path": "^0.12.7",
+    "postcss-preset-env": "^11.2.0",
+    "sass": "^1.97.3",
+    "vite": "^7.3.1"
+  }
+}
