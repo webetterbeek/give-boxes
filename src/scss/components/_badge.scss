@@ -1,0 +1,27 @@
+.badge {
+	font-size: .75rem;
+	font-weight: bold;
+	padding: .1875rem .5rem;
+	border-radius: 100vw;
+	white-space: nowrap;
+	
+	&--givebox {
+		background-color: var(--bms-blue-light);
+		color: var(--bms-blue-dark);
+	}
+	
+	&--bookbox {
+		background-color: var(--bms-teal-light);
+		color: var(--bms-teal-dark);
+	}
+	
+	&--public {
+		background-color: var(--bms-green-light);
+		color: var(--bms-green-dark);
+	}
+	
+	&--private {
+		background-color: var(--bms-amber-light);
+		color: var(--bms-amber-dark);
+	}
+}

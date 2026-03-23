@@ -1,0 +1,160 @@
+@use "../abstract/index" as *;
+
+.barometre{
+  container: wrapper / inline-size;
+}
+
+@container wrapper (min-width: 400px){
+  .figures,
+  .page-banner{
+    margin-inline: 5rem;
+  }
+}
+
+.page-banner{
+  padding-inline: 1rem;
+}
+
+.prop-heading{
+  text-align: center;
+  color: $et-prop-heading;
+  margin-block: 2.5rem;
+  font-size: 2rem;
+  text-wrap: balance;
+}
+
+.figures {
+  container: cards / inline-size;
+  display: grid;
+  gap: .25rem;
+}
+
+@container cards (min-width: 400px) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.figures-item {
+  border: 3px solid var(--border-clr, #989898);
+  color: var(--fg-color, #989898);
+  position: relative;
+  aspect-ratio: 1 / 1;
+  container: squared / inline-size;
+
+  img {
+    position: absolute;
+    width: 2.75rem;
+    top: .3rem;
+    left: .3rem;
+
+    @container  squared (min-width: 260px) {
+        width: 4.5rem;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @container cards (min-width: 400px) {
+    &:last-child {
+      flex-direction: row;
+      aspect-ratio: 2/.5;
+      justify-content: center;
+      align-items: center;
+      padding-block: 1.5rem;
+      gap: 1rem;
+    }
+  }
+
+  &__infra,
+  &__rep,
+  &__plt,
+  &__prev,
+  &__graf {
+    grid-column: 1 / -1;
+  }
+
+  &__infra{
+    --fg-color: #{$etb-prop-infra-400};
+    --border-clr: #{$etb-prop-infra-400};
+    --fg-text-clr: #{$etb-prop-infra-200};
+
+    @container cards (min-width: 400px){
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__rep{
+    --fg-color: #{$etb-prop-rep-400};
+    --border-clr: #{$etb-prop-rep-400};
+    --fg-text-clr: #{$etb-prop-rep-200};
+
+    @container cards (min-width: 400px){
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__plt {
+    --fg-color: #{$etb-prop-plt-400};
+    --border-clr: #{$etb-prop-plt-400};
+    --fg-text-clr: #{$etb-prop-plt-200};
+
+    @container cards (min-width: 400px){
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  }
+
+  &__prev {
+    --fg-color: #{$etb-prop-prev-400};
+    --border-clr: #{$etb-prop-prev-400};
+    --fg-text-clr: #{$etb-prop-prev-200};
+
+    @container cards (min-width: 400px){
+      grid-column: 2 / 3;
+      grid-row: 2 / 2;
+    }
+  }
+
+  &__graf {
+    @container cards (min-width: 400px){
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
+  }
+}
+
+.item {
+  &--figures {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.0;
+  }
+
+  &--unit{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.0;
+    text-wrap: balance;
+  }
+
+  &--text {
+    color: var(--fg-text-clr, #989898);
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+
+
+
+
+
+
+

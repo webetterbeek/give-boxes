@@ -1,0 +1,39 @@
+@use '../abstract/variables' as *;
+
+.irisbox-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(12em, 100%), 1fr));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+
+  span {
+    display: grid;
+    place-items: center;
+    padding-inline: 1.6rem;
+    padding-block: .8rem;
+    //border: 1px solid hsl(354.51, 69.23%, 56.67%);
+    border: 1px solid hsl(223.13, 61.54%, 20.39%);
+    border-radius: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+    min-height: 4rem;
+
+  }
+
+  span:hover {
+    //background-color: hsl(354.51, 69.23%, 56.67%);
+    background-color: hsl(223.13, 61.54%, 20.39%);
+
+    a {
+      color: #fff !important
+    }
+  }
+
+  /*a {
+    color: hsl(354.51, 69.23%, 56.67%) !important;
+  }*/
+
+  a:hover {
+    color: #fff !important
+  }
+}

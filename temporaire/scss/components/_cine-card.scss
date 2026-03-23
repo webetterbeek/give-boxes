@@ -1,0 +1,79 @@
+@use '../abstract/variables' as *;
+
+.cine-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+}
+
+.card-cine {
+  background: $white;
+  box-shadow: $bs-caravan;
+
+  &__title {
+    display: grid;
+    place-items: center;
+    min-height: 4rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    background: $etb-blue;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    padding-block: .5rem;
+    padding-inline: 0.5rem;
+    color: $grey-dark;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__date {
+    .fas,
+    .far {
+      color: $etb-red;
+    }
+  }
+
+  &__author {
+    text-align: center;
+  }
+
+  &__synopsys {
+    margin-inline: clamp(1rem, 2.5vw, 2rem);
+    font-size: 0.8rem;
+  }
+
+  &__info {
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: $grey-normal;
+
+    & span:not(:last-child)::after {
+      content: " | ";
+    }
+  }
+
+  &__tags {
+    font-size: .8rem;
+
+    & span {
+      display: inline-block;
+      margin-right: .3rem;
+      padding: .2rem .4rem;
+      color: $white;
+      background: $etb-green;
+    }
+
+  }
+
+}

@@ -1,0 +1,209 @@
+{
+  "give-boxes": [
+    {
+      "nameFr": "Bibliothèque Hergé",
+      "nameNl": "Franstalige bibliohteek Hergé",
+      "streetFr": "avenue de la Chasse",
+      "number": 211,
+      "streetNl": "Jachtlaan",
+      "websiteFr": "https://www.biblioherge.be/",
+      "websiteNl": "https://www.biblioherge.be/",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Bibliothèque néerlandophone",
+      "nameNl": "Nederlandstalige bibliotheek",
+      "streetFr": "avenue d'Auderghem",
+      "number": 191,
+      "streetNl": "Oudergemlaan",
+      "websiteFr": "https://etterbeek.bibliotheek.be/fr",
+      "websiteNl": "https://etterbeek.bibliotheek.be/",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Centre de service social Bruxelles Sud-Est",
+      "nameNl": "Centre de service social Bruxelles Sud-Est",
+      "streetFr": "rue Nothomb",
+      "number": "50A",
+      "streetNl": "Nothombstraat",
+      "websiteFr": "https://cssbse.be/",
+      "websiteNl": "https://cssbse.be/",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Centre de service social Bruxelles Sud-Est",
+      "nameNl": "Centre de service social Bruxelles Sud-Est",
+      "streetFr": "Rue Colonel Van Gele",
+      "number": 61,
+      "streetNl": "Kolonel Van Gelestraat",
+      "websiteFr": "https://cssbse.be/",
+      "websiteNl": "https://cssbse.be/",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Complexe scolaire Paradis des Enfants",
+      "nameNl": "School Paradis des Enfants",
+      "streetFr": "rue Baron de Castro ",
+      "number": "61A",
+      "streetNl": "Baron de Castrostraat",
+      "websiteFr": "https://www.paradisdesenfants.be/",
+      "websiteNl": "https://www.paradisdesenfants.be/",
+      "give-box": 1,
+      "users-only": 1
+    },
+    {
+      "nameFr": "CPAS d'Etterbeek",
+      "nameNl": "OCMW Etterbeek",
+      "streetFr": "rue Beckers",
+      "number": 4,
+      "streetNl": "Beckersstraat",
+      "websiteFr": "https://cpas-etterbeek.brussels/",
+      "websiteNl": "https://cpas-etterbeek.brussels/nl",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Crèche Aimé Dupont",
+      "nameNl": "Crèche Aimé Dupont",
+      "streetFr": "rue des Champs",
+      "number": 67,
+      "streetNl": "Veldstraat",
+      "give-box": 1,
+      "users-only": 1
+    },
+    {
+      "nameFr": "Crèche De Kollebloem",
+      "nameNl": "Crèche De Kollebloem",
+      "streetFr": "rue Général Fivé",
+      "number": 38,
+      "streetNl": "Generaal Fivéstraat",
+      "websiteFr": "https://www.kinderopvanginbrussel.be/fr/de-kollebloem",
+      "websiteNl": "https://www.kinderopvanginbrussel.be/nl/de-kollebloem",
+      "give-box": 1,
+      "users-only": 1
+    },
+    {
+      "nameFr": "Institut Saint-Stanislas",
+      "nameNl": "Institut Saint-Stanislas",
+      "streetFr": "avenue des Nerviens ",
+      "number": 131,
+      "streetNl": "Nerviërslaan",
+      "websiteFr": "https://www.saint-stanislas.be/",
+      "websiteNl": "https://www.saint-stanislas.be/",
+      "give-box": 1,
+      "users-only": 1
+    },
+    {
+      "nameFr": "Institut Supérieur de Fomration Continue d'Etterbeek",
+      "nameNl": "Institut Supérieur de Fomration Continue d'Etterbeek",
+      "streetFr": "rue Joseph Buedts",
+      "number": 14,
+      "streetNl": "Joseph Buedtsstraat",
+      "websiteFr": "https://www.isfce.org/",
+      "websiteNl": "https://www.isfce.org/",
+      "give-box": 1,
+      "users-only": 1
+    },
+    {
+      "nameFr": "Maison de quartier Chambéry",
+      "nameNl": "Wijkhuis Chambéry",
+      "streetFr": "rue de Chambéry",
+      "number": 24,
+      "streetNl": "Chambérystraat",
+      "websiteFr": "https://www.chambery.be/fr/",
+      "websiteNl": "https://www.chambery.be/",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Salle des seniors (Jardins de Fontenay-sous-Bois)",
+      "nameNl": "Seniorenzaal (Tuinen van Fontenay-sous-Bois)",
+      "streetFr": "rue Général Fivé",
+      "number": "18-20",
+      "streetNl": "Generaal Fivéstraat",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Société immobilière Log'Iris",
+      "nameNl": "Vastgoedmaatschappij Log'Iris",
+      "streetFr": "promenade Hyppolite Rolin",
+      "number": 1,
+      "streetNl": "Hyppolity Rolinpromenade",
+      "websiteFr": "https://slrb-bghm.brussels/fr/sisp/logiris",
+      "websiteNl": "https://slrb-bghm.brussels/nl/ovm/logiris",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Sporthal GC De Maalbeek",
+      "nameNl": "Sporthal GC De Maalbeek",
+      "streetFr": "avenue d'Auderghem",
+      "number": 124,
+      "streetNl": "Oudergemlaan",
+      "websiteFr": "https://www.demaalbeek.be/ ",
+      "websiteNl": "https://www.demaalbeek.be/",
+      "give-box": 1,
+      "public": 1
+    },
+    {
+      "nameFr": "Général Bernheim",
+      "nameNl": "Generaal Bernheim",
+      "streetFr": "avenue Général Bernheim",
+      "streetNl": "Generaal Bernheimstraat",
+      "book-box": 1
+    },
+    {
+      "nameFr": "Hyppolite Rolin",
+      "nameNl": "Hyppolite Rolin",
+      "streetFr": "promenade Hyppolite Rolin",
+      "number": 10,
+      "streetNl": "Hyppolity Rolinpromenade",
+      "book-box": 1
+    },
+    {
+      "nameFr": "Jardins de Fontenay-sous-Bois",
+      "nameNl": "Tuinen van Fontenay-sous-Bois",
+      "streetFr": "rue Général Fivé",
+      "number": "18-20",
+      "streetNl": "Generaal Fivéstraat",
+      "book-box": 1
+    },
+    {
+      "nameFr": "Jourdan",
+      "nameNl": "Jourdan",
+      "streetFr": "chaussée de Wavre",
+      "number": 394,
+      "streetNl": "Waversesteenweg",
+      "book-box": 1
+    },
+    {
+      "nameFr": "Maison de quartier Chambéry",
+      "nameNl": "Wijkhuis Chambéry",
+      "streetFr": "rue de Chambéry",
+      "number": 24,
+      "streetNl": "Chambérystraat",
+      "book-box": 1
+    },
+    {
+      "nameFr": "Roi Vainqueur",
+      "nameNl": "Koning Overwinnaar",
+      "streetFr": "place du Roi Vainqueur",
+      "number": 10,
+      "streetNl": "Koning Overwinnaarplein",
+      "book-box": 1
+    },
+    {
+      "nameFr": "Theux",
+      "nameNl": "Theux",
+      "streetFr": "rue de Theux",
+      "number": 56,
+      "streetNl": "de Theuxstraat",
+      "book-box": 1
+    }
+  ]
+}

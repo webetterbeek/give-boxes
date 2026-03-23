@@ -7,20 +7,103 @@
     <title>Vite vanilla sass</title>
     <link rel="stylesheet" href="/scss/style.scss">
     <!--    <script defer type="module" src="main.js"></script>-->
-    <style>.container {
-        max-width: 730px;
-        margin-inline: auto;
-    }</style>
+    
 
 </head>
 <body>
 
-<div class="container">
-    <section class="boxes-cards">
-        <div class="card">
-
+<div class="wrapper">
+  <ul class="give-boxes-list">
+    
+    <!-- Give-box + accès public + site web -->
+    <li class="card card--givebox">
+      <div class="card__header">
+        <div class="card__icon card__icon--givebox">
+          <!-- SVG give-box -->
+          <i class="fas fa-store">&nbsp;</i>
         </div>
-    </section>
+        <h2 class="card__name">Bibliothèque Hergé</h2>
+      </div>
+      
+      <p class="card__address">
+        <!-- SVG pin -->
+        <i class="fas fa-map-marker-alt">&nbsp;</i>
+        avenue de la Chasse 211
+      </p>
+      
+      <hr class="card__divider">
+      
+      <div class="card__footer">
+        <ul class="card__badges">
+          <li class="badge badge--givebox">Give-box</li>
+          <li class="badge badge--public">Accès public</li>
+        </ul>
+        <a href="https://www.biblioherge.be/" class="card__link" target="_blank">
+          Site web
+          <!-- SVG external link -->
+          <i class="fas fa-external-link-alt" aria-hidden="true">&nbsp;</i>
+        </a>
+      </div>
+    </li>
+    
+    <!-- Give-box + utilisateurs du lieu + site web -->
+    <li class="card card--givebox">
+      <div class="card__header">
+        <div class="card__icon card__icon--givebox">
+          <!-- SVG give-box -->
+          <i class="fas fa-store" aria-hidden="true">&nbsp;</i>
+        </div>
+        <h2 class="card__name">Complexe scolaire Paradis des Enfants</h2>
+      </div>
+      
+      <p class="card__address">
+        <!-- SVG pin -->
+        <i class="fas fa-map-marker-alt" aria-hidden="true">&nbsp;</i>
+        rue Baron de Castro 61A
+      </p>
+      
+      <hr class="card__divider">
+      
+      <div class="card__footer">
+        <ul class="card__badges">
+          <li class="badge badge--givebox">Give-box</li>
+          <li class="badge badge--private">Utilisateurs du lieu</li>
+        </ul>
+        <a href="https://www.paradisdesenfants.be/" class="card__link" target="_blank">
+          Site web
+          <!-- SVG external link -->
+          <i class="fas fa-external-link-alt" aria-hidden="true">&nbsp;</i>
+        </a>
+      </div>
+    </li>
+    
+    <!-- Boîte à livres, sans site web, sans accès -->
+    <li class="card card--bookbox">
+      <div class="card__header">
+        <div class="card__icon card__icon--bookbox">
+          <!-- SVG book -->
+          <i class="fas fa-book">&nbsp;</i>
+        </div>
+        <h2 class="card__name">Général Bernheim</h2>
+      </div>
+      
+      <p class="card__address">
+        <!-- SVG pin -->
+        <i class="fas fa-map-marker-alt" aria-hidden="true">&nbsp;</i>
+        avenue Général Bernheim
+      </p>
+      
+      <hr class="card__divider">
+      
+      <div class="card__footer">
+        <ul class="card__badges">
+          <li class="badge badge--bookbox">Boîte à livres</li>
+        </ul>
+        <!-- Pas de lien : élément absent -->
+      </div>
+    </li>
+  
+  </ul>
 </div>
 
 </body>

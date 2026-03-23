@@ -1,0 +1,72 @@
+@use '../abstract/variables' as *;
+
+.workshop-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	gap: 0.5rem;
+}
+
+.workshop-card {
+	background: $white;
+	box-shadow: $bs-caravan;
+
+	&__title {
+		display: grid;
+		place-items: center;
+		min-height: 3rem;
+		padding: 0.5rem;
+		font-size: 1.0rem;
+		color: $white;
+		text-transform: uppercase;
+		text-align: center;
+		background: $etb-blue;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: .3rem;
+		position: relative;
+		padding-block: 0.8rem;
+		color: $grey-dark;
+
+		p {
+			margin-bottom: 0.2rem;
+			font-size: 1.0rem;
+		}
+	}
+
+	&__tags {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		& span {
+			padding: .3rem .4rem;
+			font-size: 0.9rem;
+			color: $white;
+			background: $etb-green;
+		}
+	}
+
+	&__date, &__info {
+		padding-inline: .8rem;
+
+		p {
+			display: flex;
+			align-items: center;
+			word-wrap: break-word;
+
+			span:nth-child(2) span {
+				font-size: 0.8rem;
+			}
+		}
+
+		.fas,
+		.far {
+			min-width: 1.6rem;
+			color: $etb-red;
+		}
+	}
+}

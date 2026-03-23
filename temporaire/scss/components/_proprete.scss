@@ -1,0 +1,107 @@
+@use "../abstract/index" as *;
+
+.page-banner{
+  padding-inline: 5rem;
+}
+
+.prop-heading{
+  text-align: center;
+  color: $et-prop-heading;
+  margin-block: 2.5rem;
+  font-size: 2rem;
+}
+
+.figures {
+  display: grid;
+  gap: .25rem;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: 5rem;
+
+}
+
+.figures-item {
+  background-color: var(--bg-color, #989898);
+
+  &__squared {
+    aspect-ratio: 1/1;
+  }
+
+  &:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1.5rem;
+    gap:1rem;
+  }
+
+  &__infra{
+    --bg-color: #{$etb-prop-infra-400};
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  &__rep{
+    --bg-color: #{$etb-prop-rep-400};
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &__plt {
+    --bg-color: #{$etb-prop-plt-400};
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &__prev {
+    --bg-color: #{$etb-prop-prev-400};
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+  }
+
+  &__graf {
+    grid-area: graffiti;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+.item {
+  &--figures,
+  &--unit,
+  &--text {
+    color: #fff;
+  }
+
+  &--figures {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.0;
+  }
+
+  &--unit{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.0;
+  }
+
+  &--text {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+
+
+
+
+
+
+

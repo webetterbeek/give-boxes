@@ -1,0 +1,8 @@
+<i class="fas fa-store-alt"></i>  f54f
+<i class="fas fa-store"></i> f54e
+
+<i class="fas fa-book"></i> f02d
+
+<i class="fas fa-map-marker-alt"></i> f3c5
+
+<i class="fas fa-external-link-alt"></i> f35d
