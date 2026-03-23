@@ -1,7 +1,7 @@
 {
-  "name": "vite-vanilla-sass",
+  "name": "give-boxes-etterbeek",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
@@ -9,6 +9,8 @@
     "preview": "vite preview",
     "clean": "rm -rf dist"
   },
+  "keywords": ["cssmaker", "htmlmaker"],
+  "author": "BMDD",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "path": "^0.12.7",
