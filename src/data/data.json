@@ -1,5 +1,4 @@
-{
-  "give-boxes": [
+ [
     {
       "nameFr": "Bibliothèque Hergé",
       "nameNl": "Franstalige bibliohteek Hergé",
@@ -98,8 +97,8 @@
       "users-only": 1
     },
     {
-      "nameFr": "Institut Supérieur de Fomration Continue d'Etterbeek",
-      "nameNl": "Institut Supérieur de Fomration Continue d'Etterbeek",
+      "nameFr": "Institut Supérieur de Formation Continue d'Etterbeek",
+      "nameNl": "Institut Supérieur de Formation Continue d'Etterbeek",
       "streetFr": "rue Joseph Buedts",
       "number": 14,
       "streetNl": "Joseph Buedtsstraat",
@@ -154,6 +153,7 @@
       "nameFr": "Général Bernheim",
       "nameNl": "Generaal Bernheim",
       "streetFr": "avenue Général Bernheim",
+      "number": 8,
       "streetNl": "Generaal Bernheimstraat",
       "book-box": 1
     },
@@ -206,4 +206,3 @@
       "book-box": 1
     }
   ]
-}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Give boxes</title>
+    <script crossorigin="anonymous" defer src="https://kit.fontawesome.com/82aa561ddc.js"></script>
+    <script defer src="/js/htmlmaker.js" type="module"></script>
+    <style>.wrapper{max-width: 980px; margin: 0 auto;}</style>
+</head>
+<body>
+<div class='wrapper wrapper-fr'>
+    <style>
+        :root{--bms-blue-light: hsl(210, 73%, 94%);--bms-blue-dark: hsl(210, 82%, 26%);--bms-teal-light: hsl(174, 60%, 91%);--bms-teal-dark: hsl(174, 70%, 25%);--bms-green-light: hsl(96, 43%, 91%);--bms-green-dark: hsl(96, 65%, 24%);--bms-amber-light: hsl(37, 90%, 91%);--bms-amber-dark: hsl(37, 90%, 20%);--bms-white: hsl(0, 0%, 100%);--bms-text-main: hsl(0, 0%, 7%);--bms-text-muted: hsl(0, 0%, 40%);--bms-border: hsla(0, 0%, 0%, .15);--bms-bg-card: hsl(216, 22%, 99%);--color-red: hsl(354, 70%, 55%);--color-red-light: hsl(354, 70%, 97%);}.boxes-filter{display:flex;gap:0.5rem;flex-wrap:wrap;margin-block-end: 2rem;}.boxes-filter .filter-btn{font-size:0.875rem;font-weight:500;padding:0.5rem 1.25rem;border-radius:0.5rem;border:1.5px solid var(--color-red);background:none;color:var(--color-red);cursor:pointer;transition:background-color .2s ease,color .2s ease}.boxes-filter .filter-btn:hover{background-color:var(--color-red-light)}.boxes-filter .filter-btn--active{background-color:var(--color-red);color:hsl(0,0%,100%)}.boxes-filter .filter-btn--active:hover{background-color:var(--color-red)}.give-boxes-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(16.25rem,1fr));grid-gap:1rem;gap:1rem;margin:0;padding:0;list-style:none}.card{display:flex;flex-direction:column;gap:.625rem;padding:1rem 1.25rem;border:.5px solid hsla(0,0%,0%,.15);border:.5px solid var(--bms-border);border-radius:12px;background-color:#fcfcfd;background-color:var(--bms-bg-card)}.card__header{display:flex;align-items:center;gap:10px}.card__icon{display:flex;flex-shrink:0;justify-content:center;align-items:center;width:36px;height:36px;border-radius:8px}.card__icon--givebox{background-color:#e5f0fb;background-color:var(--bms-blue-light)}.card__icon--bookbox{background-color:#daf6f3;background-color:var(--bms-teal-light)}.card__name{margin:0;font-size:15px;font-weight:500;line-height:1.3;color:#121212;color:var(--bms-text-main)}.card__address{display:flex;align-items:center;gap:6px;margin:0;font-size:13px;color:#666;color:var(--bms-text-muted)}.card__divider{margin:0;border:none;border-top:.5px solid hsla(0,0%,0%,.15);border-top:.5px solid var(--bms-border)}.card__footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}.card__badges{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.card__link{display:flex;align-items:center;gap:4px;font-size:12px;color:#0c4279;color:var(--bms-blue-dark);-webkit-text-decoration:none;text-decoration:none}.card__link:hover{-webkit-text-decoration:underline;text-decoration:underline}.badge{font-size:.75rem;font-weight:700;padding:.1875rem .5rem;border-radius:100vw;white-space:nowrap}.badge--givebox{background-color:#e5f0fb;background-color:var(--bms-blue-light);color:#0c4279;color:var(--bms-blue-dark)}.badge--bookbox{background-color:#daf6f3;background-color:var(--bms-teal-light);color:#136c63;color:var(--bms-teal-dark)}.badge--public{background-color:#e6f2de;background-color:var(--bms-green-light);color:#356515;color:var(--bms-green-dark)}.badge--private{background-color:#fdedd3;background-color:var(--bms-amber-light);color:#613e05;color:var(--bms-amber-dark)}.card--hidden{display:none}
+    </style>
+
+    <div class="boxes-filter">
+        <button class="filter-btn filter-btn--active" data-filter="all">Toutes les boîtes</button>
+        <button class="filter-btn" data-filter="givebox">Give-boxes</button>
+        <button class="filter-btn" data-filter="bookbox">Boîtes à livres</button>
+    </div>
+
+    <ul class="give-boxes-list boxes-container__fr">
+        <!-- toutes les cards ici -->
+    </ul>
+
+    <script>
+      document.querySelectorAll('.filter-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+
+          document.querySelectorAll('.filter-btn').forEach(function(b) {
+            b.classList.remove('filter-btn--active');
+          });
+          this.classList.add('filter-btn--active');
+
+          const filter = this.dataset.filter;
+
+          document.querySelectorAll('.give-boxes-list .card').forEach(function(card) {
+            if (filter === 'all' || card.dataset.type === filter) {
+              card.classList.remove('card--hidden');
+            } else {
+              card.classList.add('card--hidden');
+            }
+          });
+
+        });
+      });
+    </script>
+</div>
+
+<p>&nbsp;</p>
+
+<div class='wrapper wrapper-nl'>
+  <style>
+    :root{--bms-blue-light: hsl(210, 73%, 94%);--bms-blue-dark: hsl(210, 82%, 26%);--bms-teal-light: hsl(174, 60%, 91%);--bms-teal-dark: hsl(174, 70%, 25%);--bms-green-light: hsl(96, 43%, 91%);--bms-green-dark: hsl(96, 65%, 24%);--bms-amber-light: hsl(37, 90%, 91%);--bms-amber-dark: hsl(37, 90%, 20%);--bms-white: hsl(0, 0%, 100%);--bms-text-main: hsl(0, 0%, 7%);--bms-text-muted: hsl(0, 0%, 40%);--bms-border: hsla(0, 0%, 0%, .15);--bms-bg-card: hsl(216, 22%, 99%);--color-red: hsl(354, 70%, 55%);--color-red-light: hsl(354, 70%, 97%);}.boxes-filter{display:flex;gap:0.5rem;flex-wrap:wrap;margin-block-end: 2rem;}.boxes-filter .filter-btn{font-size:0.875rem;font-weight:500;padding:0.5rem 1.25rem;border-radius:0.5rem;border:1.5px solid var(--color-red);background:none;color:var(--color-red);cursor:pointer;transition:background-color .2s ease,color .2s ease}.boxes-filter .filter-btn:hover{background-color:var(--color-red-light)}.boxes-filter .filter-btn--active{background-color:var(--color-red);color:hsl(0,0%,100%)}.boxes-filter .filter-btn--active:hover{background-color:var(--color-red)}.give-boxes-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(16.25rem,1fr));grid-gap:1rem;gap:1rem;margin:0;padding:0;list-style:none}.card{display:flex;flex-direction:column;gap:.625rem;padding:1rem 1.25rem;border:.5px solid hsla(0,0%,0%,.15);border:.5px solid var(--bms-border);border-radius:12px;background-color:#fcfcfd;background-color:var(--bms-bg-card)}.card__header{display:flex;align-items:center;gap:10px}.card__icon{display:flex;flex-shrink:0;justify-content:center;align-items:center;width:36px;height:36px;border-radius:8px}.card__icon--givebox{background-color:#e5f0fb;background-color:var(--bms-blue-light)}.card__icon--bookbox{background-color:#daf6f3;background-color:var(--bms-teal-light)}.card__name{margin:0;font-size:15px;font-weight:500;line-height:1.3;color:#121212;color:var(--bms-text-main)}.card__address{display:flex;align-items:center;gap:6px;margin:0;font-size:13px;color:#666;color:var(--bms-text-muted)}.card__divider{margin:0;border:none;border-top:.5px solid hsla(0,0%,0%,.15);border-top:.5px solid var(--bms-border)}.card__footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}.card__badges{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.card__link{display:flex;align-items:center;gap:4px;font-size:12px;color:#0c4279;color:var(--bms-blue-dark);-webkit-text-decoration:none;text-decoration:none}.card__link:hover{-webkit-text-decoration:underline;text-decoration:underline}.badge{font-size:.75rem;font-weight:700;padding:.1875rem .5rem;border-radius:100vw;white-space:nowrap}.badge--givebox{background-color:#e5f0fb;background-color:var(--bms-blue-light);color:#0c4279;color:var(--bms-blue-dark)}.badge--bookbox{background-color:#daf6f3;background-color:var(--bms-teal-light);color:#136c63;color:var(--bms-teal-dark)}.badge--public{background-color:#e6f2de;background-color:var(--bms-green-light);color:#356515;color:var(--bms-green-dark)}.badge--private{background-color:#fdedd3;background-color:var(--bms-amber-light);color:#613e05;color:var(--bms-amber-dark)}.card--hidden{display:none}
+  </style>
+
+  <div class="boxes-filter">
+    <button class="filter-btn filter-btn--active" data-filter="all">Alle boxen</button>
+    <button class="filter-btn" data-filter="givebox">Giveboxen</button>
+    <button class="filter-btn" data-filter="bookbox">Boekenboxen</button>
+  </div>
+
+  <ul class="give-boxes-list boxes-container__nl">
+    <!-- toutes les cards ici -->
+  </ul>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+
+        document.querySelectorAll('.filter-btn').forEach(function(b) {
+          b.classList.remove('filter-btn--active');
+        });
+        this.classList.add('filter-btn--active');
+
+        const filter = this.dataset.filter;
+
+        document.querySelectorAll('.give-boxes-list .card').forEach(function(card) {
+          if (filter === 'all' || card.dataset.type === filter) {
+            card.classList.remove('card--hidden');
+          } else {
+            card.classList.add('card--hidden');
+          }
+        });
+
+      });
+    });
+  </script>
+</div>

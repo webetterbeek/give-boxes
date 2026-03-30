@@ -25,5 +25,5 @@ document.querySelector('#app').innerHTML = `
 
 setupCounter(document.querySelector('#counter'))*/
 
-import { setupCounter } from './js/counter.js'
-setupCounter(document.querySelector('#counter'));
+/*import { setupCounter } from './js/counter.js'
+setupCounter(document.querySelector('#counter'));*/

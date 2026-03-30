@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
-    "build": "vite build",
-    "preview": "vite preview",
+    "devcss": "vite --open",
+    "buildcss": "vite build",
+    "htmlmaker": "vite --config vite.htmlmaker.config.js --open",
     "clean": "rm -rf dist"
   },
   "keywords": ["cssmaker", "htmlmaker"],
