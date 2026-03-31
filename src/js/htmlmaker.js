@@ -6,11 +6,11 @@ const boxesContainerNl = document.querySelector('.boxes-container__nl');
 const renderItem = function(object, container, lang = 'fr') {
 
     const { nameFr, nameNl, streetFr, number, streetNl, websiteFr, websiteNl, giveBox, usersOnly, bookBox, isPublic } = object;
-    let dataType = giveBox ? 'givebox' : 'bookbox';;
+    let dataType = giveBox ? 'givebox' : 'bookbox';
     let boxClass = giveBox ? 'givebox' : 'bookbox';
     let boxSvg = giveBox ? 'store' : 'book';
     let boxBadge = giveBox ? 'givebox' : 'bookbox';
-    let boxBadgeContent = giveBox ? 'Give-box' : 'Boîte à livres';
+    let boxBadgeContent = giveBox ? lang === 'fr' ? 'Give-box' : 'Givebox' : lang === 'fr' ? 'Boîte à livre' : 'Bookbox';
     let boxName;
     lang === 'fr' ? boxName = nameFr : boxName = nameNl;
     let address = lang === 'fr' ? `${streetFr} ${number}` : `${streetNl} ${number}`;
@@ -36,12 +36,12 @@ const renderItem = function(object, container, lang = 'fr') {
         <div class="card__footer">
           <ul class="card__badges">
             <li class="badge badge--${boxBadge}">${boxBadgeContent}</li>`;
-    if (usersOnly) html += `<li class="badge badge--private">Accès restreint</li>`;
-    if (isPublic) html += `<li class="badge badge--public">Accès public</li>`;
+    if (usersOnly) html += `<li class="badge badge--private">${lang === 'fr' ? "Accès restreint": "Beperkte toegang"}</li>`;
+    if (isPublic) html += `<li class="badge badge--public">${lang === 'fr' ? "Accès public": "Publieke toegang"}</li>`;
 
     html += `</ul>`;
 
-    if (website) html += `<a href="${website}" target="_blank" class="card__link">Website<i class="fas fa-external-link-alt" aria-hidden="true">&nbsp;</i></a>\n          
+    if (website) html += `<a href="${website}" target="_blank" class="card__link">${lang === 'fr' ? "Site web": "Website"}<i class="fas fa-external-link-alt" aria-hidden="true">&nbsp;</i></a>\n          
     `;
           
         html += `</div>\n </li>`
